@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPad Lock Screen</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 flex justify-center items-center min-h-screen">
+
+    <!-- iPad Frame -->
+    <div class="w-[900px] h-[600px] bg-black rounded-[40px] p-4">
+
+        <!-- Screen -->
+        <div class="relative w-full h-full rounded-[30px] overflow-hidden text-white">
+
+            <!-- Background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-cyan-300 to-teal-400">
+            </div>
+
+            <!-- Large Curved Shapes -->
+            <div class="absolute -top-20 -left-20 w-[500px] h-[350px] bg-blue-800 rounded-full opacity-70"></div>
+
+            <div class="absolute top-20 right-[-120px] w-[500px] h-[500px] bg-teal-200 rounded-full opacity-60"></div>
+
+            <div class="absolute bottom-[-150px] left-40 w-[700px] h-[300px] bg-cyan-500 rounded-full opacity-50"></div>
+
+            <!-- Top Left -->
+            <div class="absolute top-10 left-10">
+                <p class="text-3xl">Mon Jun</p>
+                <h1 class="text-8xl font-bold">1</h1>
+            </div>
+
+            <!-- Center Time -->
+            <div class="absolute top-10 left-1/2 -translate-x-1/2 text-center">
+                <p class="text-lg">
+                    Mon 5 ⛅ Cupertino
+                </p>
+
+                <h1 class="text-8xl font-bold">
+                    9:41
+                </h1>
+            </div>
+
+            <!-- Left Widgets -->
+            <div class="absolute top-44 left-10 space-y-6 text-sm">
+
+                <div>
+                    <p>11:30AM-12:30PM</p>
+                    <p class="font-semibold">Design Review</p>
+                    <p>Conference Room</p>
+                </div>
+
+                <div class="flex gap-8">
+                    <div>
+                        <p class="text-3xl font-bold">67°</p>
+                        <p>50° 75°</p>
+                    </div>
+
+                    <div>
+                        <p class="text-3xl font-bold">27</p>
+                        <p>AQI</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p>📈 AAPL +1.78</p>
+                    <div class="w-32 h-10 border-b border-white"></div>
+                </div>
+
+                <!-- Clock Widget -->
+                <div class="w-24 h-24 rounded-full border-4 border-white flex items-center justify-center text-2xl">
+                    🕘
+                </div>
+
+                <div>
+                    <p>Cupertino</p>
+                    <p class="text-4xl">9:41AM</p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Home Indicator -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 w-36 h-1 bg-white rounded-full"></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
